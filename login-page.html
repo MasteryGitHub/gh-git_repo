@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+    <style>
+      .container {
+        justify-content: center;
+        display: grid;
+      }
+      form {
+        border-radius: 10px;
+        box-shadow: 5px 5px 0 rgb(90, 88, 88);
+        display: flex;
+        padding: 3rem;
+        background: #c4c4c4;
+        flex-direction: column;
+        row-gap: 1rem;
+      }
+      form > input {
+        border-radius: 5px;
+        padding: 0.1rem 0;
+        border: none;
+      }
+      form > input:focus {
+        outline: 2px solid grey;
+      }
+
+      button {
+        background-color: grey;
+        padding: 5px;
+        box-sizing: border-box;
+        box-shadow: 0 0 10px #c4c4;
+        width: 30%;
+        cursor: pointer;
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <form action="" method="post">
+        <h1>Login As Admin</h1>
+        <label for="username">Username</label>
+        <input type="text" id="username" />
+        <label for="password">Password</label>
+        <input type="password" id="password" />
+        <button>Login</button>
+      </form>
+    </div>
+  </body>
+</html>
